@@ -1,0 +1,18 @@
+alias les='less -S'
+alias sacct='sacct -o "JobID,JobName%75,Partition,Account,AllocCPUS,Elapsed,State,ExitCode"'
+alias SQQ='squeue --format="%.18i %.9P %.75j %.8u %.2t %.10M  %.3C %.7m %.6D %R" -u lamnidis'
+alias SQ='squeue --format="%.18i %.9P %.75j %.8u %.2t %.10M  %.3C %.7m %.6D %R"'
+alias cdata='cd /projects1/users/lamnidis/'
+alias clapa='cd /projects1/LapaDoSanto'
+alias cfin='cd /projects1/AncientFinnish/Revision'
+alias cfu='cd /projects1/Fuegan'
+alias cnad='cd /projects1/NaDene/revision.backup'
+alias ll='ls -hlF --group-directories-first'
+alias la='ls -A --group-directories-first'
+alias l='ls -CF --group-directories-first'
+alias up='cd ..'
+alias upp='cd ../..'
+alias uppp='cd ../../..'
+alias islurm="srun -c 1 -J Playground --mem=4000 -t 0-00:60 --pty -u bash -i"
+alias wSQQ="watch \"squeue --format='%.18i %.9P %.75j %.8u %.2t %.10M  %.3C %.7m %.6D %R' -u $USER\""
+alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done'
